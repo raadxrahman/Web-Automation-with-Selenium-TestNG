@@ -64,8 +64,10 @@ In this project, I have used Selenium & TestNG to automate all features of the [
 
 ## Demonstration
 #### Includes running the project both from IDE and Terminal.
+
+
 Click on the video.
-[![Watch the video](https://github.com/raadxrahman/JunitAutomation/blob/master/src/test/resources/Demonstration/img_2.png)]( https://youtu.be/XFc1viAzUvk)
+[![Watch the video](https://img.youtube.com/vi/<ac9AGWueGK4>/maxresdefault.jpg)](https://youtu.be/ac9AGWueGK4)
 
 ##  Author
 

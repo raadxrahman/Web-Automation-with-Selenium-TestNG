@@ -62,5 +62,11 @@ In this project, I have used Selenium & TestNG to automate all features of the [
 #### 2. Behaviours 
 ![Screenshot 2025-05-07 215558](https://github.com/user-attachments/assets/58f2379d-5dae-4a14-95de-94f1e4f4e928)
 
+## Demonstration
+#### Includes running the project both from IDE and Terminal.
+Click on the video.
+[![Watch the video](https://github.com/raadxrahman/JunitAutomation/blob/master/src/test/resources/Demonstration/img_2.png)]( https://youtu.be/XFc1viAzUvk)
 
- 
+##  Author
+
+Mahbubur Rahman

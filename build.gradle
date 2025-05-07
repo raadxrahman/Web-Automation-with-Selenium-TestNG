@@ -54,6 +54,17 @@ dependencies {
 
 test {
     useTestNG(){
+
+        if (project.hasProperty("adminEmail") && project.hasProperty("adminPassword")) {
+            systemProperties.put("adminEmail", project.property("adminEmail"))
+            systemProperties.put("adminPassword", project.property("adminPassword"))
+
+            print(project.property("adminEmail"))
+            print(project.property("adminPassword"))
+        }
         suites "./src/test/resources/suite.xml"
+
     }
+
+
 }

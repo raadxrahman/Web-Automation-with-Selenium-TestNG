@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import java.util.List;
 
 public class ResetPasswordPage {
@@ -27,6 +26,7 @@ public class ResetPasswordPage {
     }
 
     public String newPassword() {
+
         String newPassword = String.valueOf(Utils.Utils.generateRandomNumber(0000,9999));
         webDriver.findElements(By.tagName("input")).get(0).sendKeys(newPassword);
         webDriver.findElements(By.tagName("input")).get(1).sendKeys(newPassword);

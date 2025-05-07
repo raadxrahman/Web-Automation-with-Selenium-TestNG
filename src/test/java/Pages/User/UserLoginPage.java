@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -30,7 +33,11 @@ public class UserLoginPage {
     @FindBy(css = "[role=menuitem]")
     List<WebElement> menuItem;
 
+    @FindBy(xpath = "//p[text()='Invalid email or password']")
+    WebElement invalidCredentialsErrorMessage;
+
     public UserLoginPage(WebDriver driver){
+        this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
@@ -41,8 +48,18 @@ public class UserLoginPage {
     }
 
     public boolean loginSuccessful() {
-        UserPage user = new UserPage(driver);
-        return user.loadUserDashboard();
+        UserPage userPage = new UserPage(driver);
+        return userPage.loadUserDashboard();
+    }
+
+    public boolean loginNotSuccessful() { //reverse negative
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOf(invalidCredentialsErrorMessage));
+            return true;
+        } catch (NoSuchElementException | org.openqa.selenium.TimeoutException e) {
+            return false;
+        }
     }
 
     public void doLogout(){

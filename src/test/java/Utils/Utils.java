@@ -89,6 +89,12 @@ public class Utils {
         return "unable to extract";
     }
 
+    public static void acceptAlert(WebDriver webDriver) throws InterruptedException {
+        Thread.sleep(1000);
+        webDriver.switchTo().alert().accept();
+        Thread.sleep(1000);
+    }
+
 
 }
 

@@ -18,6 +18,7 @@ public class Setup {
 
     @BeforeTest
     public void setup(){
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -26,12 +27,15 @@ public class Setup {
 
     @BeforeTest
     public static Properties configFile() throws IOException {
+
         properties = new Properties();
         properties.load(new FileInputStream(fileConfig));
         return properties;
     }
 
-    public static void setProperty(String key, String value) throws ConfigurationException, org.apache.commons.configuration.ConfigurationException {
+    public static void setProperty(String key, String value) throws ConfigurationException,
+            org.apache.commons.configuration.ConfigurationException {
+
         PropertiesConfiguration propertiesConfiguration = new PropertiesConfiguration(fileConfig);
         propertiesConfiguration.setProperty(key, value);
         propertiesConfiguration.save();

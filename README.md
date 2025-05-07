@@ -67,7 +67,7 @@ In this project, I have used Selenium & TestNG to automate all features of the [
 
 
 Click on the video.
-[![Watch the video](https://img.youtube.com/vi/<ac9AGWueGK4>/maxresdefault.jpg)](https://youtu.be/ac9AGWueGK4)
+[![Watch the video](https://github.com/raadxrahman/Web-Automation-with-Selenium-TestNG/blob/master/src/test/resources/thumb.png)](https://youtu.be/ac9AGWueGK4)
 
 ##  Author
 

@@ -23,4 +23,28 @@ In this project, I have used Selenium & TestNG to automate the [Daily Finance](h
   * Java Development Kit (JDK) 8 or later
   * IntelliJ IDEA (or your preferred Java IDE)
   * Gradle (if you want to use the provided Gradle build)
+
+## Setup Instructions
+
+ 1.  **Clone the repository:**
+
+     ```bash
+     git clone <repository_url>
+     cd <repository_name>
+     ```
+
+ 2.  **Open the project in IntelliJ IDEA:**
+
+     * Open IntelliJ IDEA.
+     * Select "Open or Import Project."
+     * Navigate to the project directory and select the `build.gradle` file (if you are using Gradle) or the project directory itself.
+     * IntelliJ IDEA will import the project.
+       
+## Allure Reports
+#### 1. Overview 
+![Screenshot 2025-05-07 215539](https://github.com/user-attachments/assets/ae0c91fa-42f9-4b72-83d5-929653cfe1e7)
+#### 2. Behaviours 
+![Screenshot 2025-05-07 215558](https://github.com/user-attachments/assets/58f2379d-5dae-4a14-95de-94f1e4f4e928)
+
+
  

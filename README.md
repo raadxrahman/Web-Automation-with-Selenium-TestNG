@@ -1,5 +1,5 @@
 # Automating and Scraping Webpages using Selenium & TestNG
-In this project, I have used Selenium & TestNG to automate all features of the [Daily Finance](https://dailyfinance.roadtocareer.net/) website and scrape data from a data table following the Page-Object-Model(POM)
+In this project, I have used Selenium & TestNG following the Page-Object-Model(POM) to automate all features of the [Daily Finance](https://dailyfinance.roadtocareer.net/) website, read and store datas from .CSV and .txt files, and scrape data from a data table. 
 
 ## Technologies Used
 

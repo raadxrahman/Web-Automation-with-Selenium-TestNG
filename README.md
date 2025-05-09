@@ -35,6 +35,8 @@ In this project, I have used Selenium & TestNG to automate all features of the [
      * Select "Open or Import Project."
      * Navigate to the project directory and select the `build.gradle` file (if you are using Gradle) or the project directory itself.
      * IntelliJ IDEA will import the project.
+   
+     
 ## Tasks Automated
 * User Registration: Automation of the new user registration process, including dynamic email generation (e.g., gmailuser+randomdigit@gmail.com) and assertion of successful registration.
 * Password Reset - Negative Testing: Implementation of two negative test cases for the password reset functionality with appropriate assertions.
@@ -49,7 +51,10 @@ In this project, I have used Selenium & TestNG to automate all features of the [
 * Bulk User Registration (CSV Data): Implementation of data-driven testing to register three additional users using data sourced from a CSV file.
 * User Data Extraction (Admin): Automation for admin users to retrieve all user data from the user table and write it to a text file.
 
-       
+## Test Cases
+Visit the [link](https://docs.google.com/spreadsheets/d/1SENdAEh4qqdwBK4n68Ux34tyCcaZ-45lJKHrfYT4-cM/edit?usp=sharing) for the detailed test cases covered while automating the website.    
+
+
 ## Allure Reports
 #### 1. Overview 
 ![Screenshot 2025-05-07 215539](https://github.com/user-attachments/assets/ae0c91fa-42f9-4b72-83d5-929653cfe1e7)
